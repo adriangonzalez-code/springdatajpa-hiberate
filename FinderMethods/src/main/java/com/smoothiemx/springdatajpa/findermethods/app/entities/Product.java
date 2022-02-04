@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Product {
 
     @Id
-    private Long id;
+    private int id;
 
     private String name;
 
@@ -19,18 +19,18 @@ public class Product {
     public Product() {
     }
 
-    public Product(Long id, String name, String desc, Double price) {
+    public Product(int id, String name, String desc, Double price) {
         this.id = id;
         this.name = name;
         this.desc = desc;
         this.price = price;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
