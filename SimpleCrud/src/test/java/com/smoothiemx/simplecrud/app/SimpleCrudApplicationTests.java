@@ -6,11 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 @SpringBootTest
 class SimpleCrudApplicationTests {
 
@@ -24,10 +19,10 @@ class SimpleCrudApplicationTests {
     @Test
     void testCreate() {
         Product product = new Product();
-        product.setId(4);
-        product.setName("IPhone");
-        product.setDesc("Awesome!");
-        product.setPrice(1000d);
+        product.setId(3);
+        product.setName("Sony Walkman");
+        product.setDesc("Listen music");
+        product.setPrice(5484d);
 
         repository.save(product);
     }
